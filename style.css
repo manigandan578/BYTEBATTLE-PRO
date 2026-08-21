@@ -816,18 +816,15 @@
     }
     .stand-bronze .pedestal-rank-circle {
       color: var(--ink);
-      background: var(--white);
-      border-color: var(--ink);
     }
 
-   /* Scoreboard Table */
+    /* Scoreboard Table */
     .table-responsive {
       width: 100%;
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
-      border-radius: 12px;
-      border: 1px solid var(--border-color);
-      background: rgba(10, 15, 26, 0.85);
+      border-radius: var(--radius-md);
+      border: var(--line) solid var(--ink);
     }
     .scoreboard-table {
       width: 100%;
@@ -837,21 +834,19 @@
       min-width: 540px;
     }
     .scoreboard-table th {
-      background: #070a12;
+      background: var(--teal);
       padding: 12px 14px;
-      color: var(--text-secondary);
-      font-weight: 700;
+      font-weight: 800;
       text-transform: uppercase;
       font-size: 11px;
       letter-spacing: 0.05em;
-      border-bottom: 1px solid var(--border-color);
+      border-bottom: 3px solid var(--ink);
     }
     .scoreboard-table td {
       padding: 12px 14px;
       border-bottom: 1px solid rgba(30, 41, 59, 0.6);
     }
-    .scoreboard-table tr:hover { background: rgba(30, 41, 59, 0.4); }
-
+    .scoreboard-table tr:hover {  background: rgba(30, 41, 59, 0.4); }
 
     /* Modal */
     .modal-backdrop {
