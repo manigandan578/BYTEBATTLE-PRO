@@ -1,4 +1,4 @@
 // Supabase public browser configuration.
 // Replace these placeholders with values from Supabase Project Settings > API.
-window.BYTE_BATTLE_SUPABASE_URL = 'ikdfzfwxqbtbzjxjqicq';
+window.BYTE_BATTLE_SUPABASE_URL = 'https://ikdfzfwxqbtbzjxjqicq.supabase.co';
 window.BYTE_BATTLE_SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlrZGZ6Znd4cWJ0YnpqeGpxaWNxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODcxMzAyNTcsImV4cCI6MjEwMjcwNjI1N30.EHUYFqs9gKKERdlpbvLGYT_k6CFZ_woTXhgf5AelUes';
