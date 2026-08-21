@@ -1,4 +1,4 @@
-    :root {
+:root {
       /* ---- Neubrutalist palette ---- */
       --cream: #FDFBF7;
       --cream-dim: #F6F1E6;
@@ -95,43 +95,6 @@
     .bg-watermark-layer svg.shape-pink { color: var(--pink-hi); opacity: 0.16; }
     .bg-watermark-layer svg.shape-yellow { color: var(--yellow-hi); opacity: 0.18; }
 
-    /* ---- Decorative top utility bar (added in index.html) ---- */
-    .site-topbar {
-      position: sticky;
-      top: 0;
-      z-index: 45;
-      background: var(--cream);
-      border-bottom: var(--line) solid var(--ink);
-      padding: 8px 16px;
-    }
-    .topbar-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-    .topbar-icon-btn {
-      width: 34px;
-      height: 34px;
-      border-radius: var(--radius-pill);
-      background: var(--white);
-      border: 2px solid var(--ink);
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--ink);
-      cursor: default;
-      transition: transform 0.15s ease, background 0.15s ease;
-    }
-    .topbar-icon-btn svg { width: 17px; height: 17px; }
-    .topbar-icon-btn:nth-child(3n+1):hover { background: var(--pink); }
-    .topbar-icon-btn:nth-child(3n+2):hover { background: var(--yellow); }
-    .topbar-icon-btn:nth-child(3n+3):hover { background: var(--mint); }
-    .topbar-icon-btn:hover { transform: translateY(-2px) rotate(-3deg); }
-
     /* Typography */
     h1, h2, h3, h4 { color: var(--ink); font-weight: 800; letter-spacing: -0.01em; }
     .battle-card h1, .battle-card h2, .battle-card h3, .battle-card h4 { color: var(--cream); }
@@ -168,12 +131,15 @@
     /* Header */
     .global-header {
       position: sticky;
-      top: 51px;
+      top: 0;
       z-index: 40;
       background: var(--cream);
       border-bottom: var(--line) solid var(--ink);
       padding: 12px 16px;
     }
+    .global-header-minimal { padding: 10px 16px; }
+    .global-header-minimal .header-container { justify-content: space-between; }
+    .global-header-minimal .brand-logo { gap: 8px; }
 
     .header-container {
       max-width: 1200px;
@@ -926,10 +892,7 @@
        MOBILE RESPONSIVENESS MEDIA QUERIES (<768px & <480px)
        ========================================================================== */
     @media (max-width: 768px) {
-      .site-topbar { padding: 6px 10px; }
-      .topbar-icon-btn { width: 28px; height: 28px; }
-      .topbar-icon-btn svg { width: 14px; height: 14px; }
-      .global-header { padding: 10px 14px; top: 41px; }
+      .global-header { padding: 10px 14px; }
       .header-container { gap: 10px; }
       .brand-name { font-size: 16px; }
       .logo-icon-box { width: 32px; height: 32px; border-radius: 10px; }
@@ -980,7 +943,6 @@
     @media (max-width: 480px) {
       .header-container { justify-content: space-between; }
       .badge-live { display: none; }
-      .topbar-icon-btn:nth-child(n+7) { display: none; }
       .btn { padding: 8px 14px; font-size: 12px; }
       .btn-sm { padding: 5px 12px; font-size: 11px; }
       .portal-features-grid { grid-template-columns: 1fr 1fr 1fr; gap: 6px; }

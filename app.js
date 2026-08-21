@@ -1,4 +1,4 @@
-﻿    // Professional SVG Favicon / Icon System
+﻿// Professional SVG Favicon / Icon System
     const ICONS = {
       bolt: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>',
       shield: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>',
@@ -1188,6 +1188,28 @@
       const quiz = state.selectedQuiz;
       const participant = state.currentParticipant;
       const showQuizInHeader = quiz && (state.currentView !== 'student' || state.studentStep !== 'code_portal');
+      const isTakingQuiz = state.currentView === 'student' && state.studentStep === 'active_quiz';
+
+      // Minimal header while a student is actively answering questions —
+      // just the logo and their live point total, so mobile screens keep
+      // maximum room for the question itself.
+      if (isTakingQuiz) {
+        return `
+          <header class="global-header global-header-minimal">
+            <div class="header-container">
+              <div class="brand-logo" id="header-brand-logo">
+                <div class="logo-icon-box">${icon('bolt')}</div>
+                <span class="brand-name font-mono">BYTE<span class="text-cyan">BATTLE</span></span>
+              </div>
+              ${participant ? `
+                <div style="display:inline-flex; align-items:center; gap:8px; font-size:12px; background:#FFFFFF; padding:4px 10px; border-radius:8px; border:2px solid var(--border-color); color:#14201F;">
+                  <span class="font-mono font-bold" style="color:#1E9C6B;">${participant.score} pts</span>
+                </div>
+              ` : ''}
+            </div>
+          </header>
+        `;
+      }
 
       return `
         <header class="global-header">
@@ -3176,4 +3198,3 @@
       startQuestionTimer();
     }
     initializeSupabaseSync();
-
