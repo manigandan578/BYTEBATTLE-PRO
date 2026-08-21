@@ -1756,7 +1756,7 @@
               <span class="text-muted" style="font-size:12px;">Ranks 4 and below</span>
             </div>
 
-            <div style="overflow-x:auto; background:rgba(15,23,42,0.85); border:1px solid var(--border-color); border-radius:12px;">
+            <div style="overflow-x:auto; background:#FDFBF7; border:2px solid var(--border-color); border-radius:12px;">
               <table class="scoreboard-table">
                 <thead>
                   <tr>
@@ -2077,7 +2077,7 @@
               <span class="badge-live">LIVE</span>
             </div>
 
-            <div style="overflow-x:auto; background:rgba(15,23,42,0.85); border:1px solid var(--border-color); border-radius:12px;">
+            <div style="overflow-x:auto; background:#FDFBF7; border:2px solid var(--border-color); border-radius:12px;">
               <table class="scoreboard-table">
                 <thead>
                   <tr>
@@ -2368,7 +2368,7 @@
                   <span class="text-muted" style="font-size:12px;">Ranks 4 and below</span>
                 </div>
 
-                <div style="overflow-x:auto; background:rgba(15,23,42,0.85); border:1px solid var(--border-color); border-radius:12px;">
+                <div style="overflow-x:auto; background:#FDFBF7; border:2px solid var(--border-color); border-radius:12px;">
                   <table class="scoreboard-table">
                     <thead>
                       <tr>
@@ -2408,7 +2408,7 @@
                 </div>
               </div>
 
-              <div style="overflow-x:auto; background:rgba(15,23,42,0.85); border:1px solid var(--border-color); border-radius:12px; margin-bottom:20px;">
+              <div style="overflow-x:auto; background:#FDFBF7; border:2px solid var(--border-color); border-radius:12px; margin-bottom:20px;">
                 <table class="scoreboard-table">
                   <thead>
                     <tr>
