@@ -825,10 +825,9 @@
       width: 100%;
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
-      border-radius: var(--radius-md);
-      border: var(--line) solid var(--ink);
-      background: var(--cream);
-      box-shadow: var(--shadow-sm);
+      border-radius: 12px;
+      border: 1px solid var(--border-color);
+      background: rgba(10, 15, 26, 0.85);
     }
     .scoreboard-table {
       width: 100%;
@@ -836,24 +835,22 @@
       font-size: 13px;
       text-align: left;
       min-width: 540px;
-      color: var(--ink);
     }
     .scoreboard-table th {
-      background: var(--teal);
-      color: var(--cream);
+      background: #070a12;
       padding: 12px 14px;
-      font-weight: 800;
+      color: var(--text-secondary);
+      font-weight: 700;
       text-transform: uppercase;
       font-size: 11px;
       letter-spacing: 0.05em;
-      border-bottom: 3px solid var(--ink);
+      border-bottom: 1px solid var(--border-color);
     }
     .scoreboard-table td {
       padding: 12px 14px;
-      border-bottom: 2px solid var(--cream-dim);
+      border-bottom: 1px solid rgba(30, 41, 59, 0.6);
     }
-    .scoreboard-table tr:hover { background: var(--pink-dim); }
-
+    .scoreboard-table tr:hover { background: rgba(30, 41, 59, 0.4); }
     /* Modal */
     .modal-backdrop {
       position: fixed;
